@@ -177,6 +177,11 @@ public class SetmealController {
         return R.success("操作成功");
     }
 
+    /**
+     * 套餐启售
+     * @param ids
+     * @return
+     */
     @PostMapping("/status/1")
     public R<String> start(Long []ids){
         for (int i = 0; i < ids.length; i++) {
