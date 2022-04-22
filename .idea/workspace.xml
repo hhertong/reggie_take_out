@@ -5,10 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0452fc01-e1d0-4cd4-9e0c-311e772079d8" name="Changes" comment="Changes">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/itheima/reggie/service/impl/SetmealServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/itheima/reggie/service/impl/SetmealServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/itheima/reggie/controller/DishController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/itheima/reggie/controller/DishController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/itheima/reggie/ReggieApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/itheima/reggie/ReggieApplication.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/itheima/reggie/common/BaseContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/itheima/reggie/common/BaseContext.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/itheima/reggie/common/CustomException.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/itheima/reggie/common/CustomException.class" afterDir="false" />
@@ -77,13 +76,6 @@
       <change beforePath="$PROJECT_DIR$/target/classes/com/itheima/reggie/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/itheima/reggie/service/impl/UserServiceImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/itheima/reggie/utils/SMSUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/itheima/reggie/utils/SMSUtils.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/itheima/reggie/utils/ValidateCodeUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/itheima/reggie/utils/ValidateCodeUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/reggie_take_out-1.0-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/reggie_take_out-1.0-SNAPSHOT.jar.original" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -254,7 +246,8 @@
       <workItem from="1650467963118" duration="83000" />
       <workItem from="1650468073855" duration="900000" />
       <workItem from="1650598627887" duration="1183000" />
-      <workItem from="1650605268141" duration="55000" />
+      <workItem from="1650605268141" duration="3009000" />
+      <workItem from="1650626722075" duration="1436000" />
     </task>
     <task id="LOCAL-00001" summary="Changes">
       <created>1650442223187</created>
@@ -291,7 +284,14 @@
       <option name="project" value="LOCAL" />
       <updated>1650468340099</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Changes">
+      <created>1650605415347</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1650605415347</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

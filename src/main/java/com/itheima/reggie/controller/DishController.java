@@ -187,4 +187,51 @@ public class DishController {
         return R.success(dishDtoList);
     }
 
+
+    /**
+     * 停售状态
+     * @param ids
+     * @return
+     */
+    @PostMapping("/status/0")
+    public R<String> stop(Long []ids){
+        for (int i = 0; i < ids.length; i++) {
+            Dish dish=new Dish();
+            //条件构造器
+            LambdaQueryWrapper<Dish> queryWrapper=new LambdaQueryWrapper<>();
+            //添加查询条件
+            queryWrapper.eq(Dish::getId,ids[i]);
+            //添加修改语句
+            dish.setStatus(0);
+            //进行更改语句
+            dishService.update(dish,queryWrapper);
+        }
+
+
+        return R.success("操作成功");
+    }
+
+    /**
+     * 启售商品
+     * @param ids
+     * @return
+     */
+    @PostMapping("/status/1")
+    public R<String> start(Long []ids){
+        for (int i = 0; i < ids.length; i++) {
+            Dish dish=new Dish();
+            //条件构造器
+            LambdaQueryWrapper<Dish> queryWrapper=new LambdaQueryWrapper<>();
+            //添加查询条件
+            queryWrapper.eq(Dish::getId,ids[i]);
+            //添加修改语句
+            dish.setStatus(1);
+            //进行更改语句
+            dishService.update(dish,queryWrapper);
+        }
+
+        return R.success("操作成功");
+    }
+
+
 }
