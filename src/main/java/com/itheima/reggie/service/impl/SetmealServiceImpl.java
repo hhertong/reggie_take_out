@@ -10,6 +10,7 @@ import com.itheima.reggie.mapper.SetmealMapper;
 import com.itheima.reggie.service.SetmealDishService;
 import com.itheima.reggie.service.SetmealService;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
@@ -73,12 +74,19 @@ public class SetmealServiceImpl extends ServiceImpl<SetmealMapper,Setmeal> imple
 
     @Override
     public SetmealDto getByIdWithDish(Long id) {
-        //获取套餐信息
-        this.getById(id);
+        //查询套餐基本信息,从setmeal表中获取数据
+        Setmeal setmeal=this.getById(id);
+
+        SetmealDto setmealDto=new SetmealDto();
+        BeanUtils.copyProperties(setmeal,setmealDto);
+
+        //查询当前套餐所对应的菜品
+        LambdaQueryWrapper<SetmealDish> queryWrapper=new LambdaQueryWrapper<>();
+        queryWrapper.eq(SetmealDish::getId,setmeal.getId());
+        List<SetmealDish> list = setmealDishService.list(queryWrapper);
+        setmealDto.setSetmealDishes(list);
 
 
-
-
-        return null;
+        return setmealDto;
     }
 }
