@@ -2,6 +2,7 @@ package com.itheima.reggie.controller;
 
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
+import com.itheima.reggie.common.BaseContext;
 import com.itheima.reggie.common.R;
 import com.itheima.reggie.dto.SetmealDto;
 import com.itheima.reggie.entity.Category;
@@ -17,6 +18,7 @@ import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.time.LocalDateTime;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -151,4 +153,45 @@ public class SetmealController {
 
         return R.success("修改成功");
     }
+
+    /**
+     * 停售套餐
+     * @param ids
+     * @return
+     */
+    @PostMapping("/status/0")
+    public R<String> stop(Long []ids){
+        for (int i = 0; i < ids.length; i++) {
+            Setmeal setmeal=new Setmeal();
+
+            //条件构造器
+            LambdaQueryWrapper<Setmeal> queryWrapper=new LambdaQueryWrapper<>();
+            //增加查询条件
+            queryWrapper.eq(Setmeal::getId,ids[i]);
+            //增加修改语句
+            setmeal.setStatus(0);
+            setmealService.update(setmeal,queryWrapper);
+        }
+
+
+        return R.success("操作成功");
+    }
+
+    @PostMapping("/status/1")
+    public R<String> start(Long []ids){
+        for (int i = 0; i < ids.length; i++) {
+            Setmeal setmeal=new Setmeal();
+
+            //条件构造器
+            LambdaQueryWrapper<Setmeal> queryWrapper=new LambdaQueryWrapper<>();
+            //增加查询条件
+            queryWrapper.eq(Setmeal::getId,ids[i]);
+            //增加修改语句
+            setmeal.setStatus(1);
+            setmealService.update(setmeal,queryWrapper);
+        }
+        return R.success("操作成功");
+    }
+
+
 }
