@@ -7,8 +7,9 @@
     <list default="true" id="0452fc01-e1d0-4cd4-9e0c-311e772079d8" name="Changes" comment="Changes">
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/itheima/reggie/controller/SetmealController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/itheima/reggie/controller/SetmealController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/itheima/reggie/controller/ShoppingCartController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/itheima/reggie/controller/ShoppingCartController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/itheima/reggie/controller/SetmealController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/itheima/reggie/controller/SetmealController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/itheima/reggie/controller/ShoppingCartController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/itheima/reggie/controller/ShoppingCartController.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -182,7 +183,9 @@
       <workItem from="1650605268141" duration="3009000" />
       <workItem from="1650626722075" duration="2685000" />
       <workItem from="1650635275868" duration="2493000" />
-      <workItem from="1650638901357" duration="817000" />
+      <workItem from="1650638901357" duration="923000" />
+      <workItem from="1650710487518" duration="1379000" />
+      <workItem from="1650725481375" duration="587000" />
     </task>
     <task id="LOCAL-00001" summary="Changes">
       <created>1650442223187</created>
@@ -240,7 +243,21 @@
       <option name="project" value="LOCAL" />
       <updated>1650628310702</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Changes">
+      <created>1650639740203</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1650639740203</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Changes">
+      <created>1650639779356</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1650639779356</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

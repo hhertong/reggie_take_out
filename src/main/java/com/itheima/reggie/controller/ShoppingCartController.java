@@ -36,7 +36,7 @@ public class ShoppingCartController {
         Long currentId = BaseContext.getCurrentId();
         shoppingCart.setUserId(currentId);
 
-         Long dishId = shoppingCart.getDishId();
+        Long dishId = shoppingCart.getDishId();
 
         LambdaQueryWrapper<ShoppingCart> queryWrapper = new LambdaQueryWrapper<>();
         queryWrapper.eq(ShoppingCart::getUserId,currentId);
@@ -102,4 +102,24 @@ public class ShoppingCartController {
 
         return R.success("清空购物车成功");
     }
+
+    /**
+     * 减少选中的菜品
+     * @return
+     */
+    @PostMapping("/sub")
+    public R<String> sub(@RequestBody ShoppingCart shoppingCart){
+
+
+        LambdaQueryWrapper<ShoppingCart> queryWrapper=new LambdaQueryWrapper<>();
+
+        queryWrapper.eq(ShoppingCart::getDishId,shoppingCart.getDishId());
+
+
+
+
+
+        return null;
+    }
+
 }
