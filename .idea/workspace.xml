@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0452fc01-e1d0-4cd4-9e0c-311e772079d8" name="Changes" comment="redis缓存">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -188,7 +188,7 @@
       <workItem from="1650856536150" duration="8390000" />
       <workItem from="1650892556800" duration="1310000" />
       <workItem from="1650893996969" duration="1681000" />
-      <workItem from="1651028080515" duration="4446000" />
+      <workItem from="1651028080515" duration="4843000" />
     </task>
     <task id="LOCAL-00001" summary="Changes">
       <created>1650442223187</created>
@@ -288,7 +288,14 @@
       <option name="project" value="LOCAL" />
       <updated>1651033202527</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="redis缓存">
+      <created>1651036677774</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1651036677774</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

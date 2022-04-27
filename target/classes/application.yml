@@ -53,4 +53,4 @@ mybatis-plus:
     db-config:
       id-type: ASSIGN_ID
 reggie:
-  path: C:\Users\28411\Desktop\7、黑马程序员瑞吉外卖平台实战开发\瑞吉外卖-资料\1 瑞吉外卖项目\img\
+  path: /usr/local/img
